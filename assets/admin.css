@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
-.fs-section {
-    width: 100%;
-    box-sizing: border-box;
+header.fs-app-header {
+    width: 800px;
+    margin: auto;
+}
+
+.fs-page-title{
+    display: none;
+}
+
+.fs-plugin-logo {
+    display: none !important;
+}
+
+.wrap.fs-section {
     margin: 0 auto  !important;
-    width: 850px;
 }
 
 .fs-secure-notice {
@@ -103,4 +113,8 @@ a.nav-tab.fs-tab.pricing {
     /* width: 11px;
     height: 14px;
     background-repeat: no-repeat; */
+}
+
+span.fs-submenu-item svg {
+    display: none;
 }

@@ -138,14 +138,19 @@ class Framework
             'has_addons'          => false,
             'has_paid_plans'      => true,
             'navigation'          => 'tabs',
+            'secret_key'          => 'sk_eFMOvNvP];.gewRm@6<p[PR}Q.9gw',
             'menu'                => array(
                 'slug'          => $this->args['slug'],
                 'support'       => false,
             ),
         ]);
+        
+        $this->freemius->add_filter( 'freemius_pricing_js_path', function () {
+            return $this->path . "assets/pricing-page/freemius-pricing.js";
+        });
 
-        $pricingSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/>
-            <path d="M12 2a6 6 0 0 1 6 6v1h4v2h-1.167l-.757 9.083a1 1 0 0 1-.996.917H4.92a1 1 0 0 1-.996-.917L3.166 11H2V9h4V8a6 6 0 0 1 6-6zm1 11h-2v4h2v-4zm-4 0H7v4h2v-4zm8 0h-2v4h2v-4zm-5-9a4 4 0 0 0-3.995 3.8L8 8v1h8V8a4 4 0 0 0-3.8-3.995L12 4z"/>
+        $pricingSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z"/><path d="M6.5 2h11a1 1 0 0 1 .8.4L21 6v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6l2.7-3.6a1 1 0 0 1 .8-.4zm12 4L17 4H7L5.5 6h13zM9 10H7v2a5 5 0 0 0 10 0v-2h-2v2a3 3 0 0 1-6 0v-2z"/>
         </svg>';
 
         $contactSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
