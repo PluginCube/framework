@@ -13,16 +13,8 @@ header.fs-app-header {
     display: none !important;
 }
 
-.wrap.fs-section {
-    margin: 0 auto  !important;
-}
-
 .fs-secure-notice {
     display: none;
-}
-
-#wpcontent {
-    padding: 0;
 }
 
 .cf-plugin-logo {

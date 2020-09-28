@@ -1,6 +1,0 @@
-[submodule "options"]
-	path = options
-	url = https://github.com/cirapress/options.git
-[submodule "freemius"]
-	path = freemius
-	url = https://github.com/Freemius/wordpress-sdk.git
