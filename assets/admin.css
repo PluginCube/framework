@@ -118,3 +118,13 @@ a.nav-tab.fs-tab.pricing {
 span.fs-submenu-item svg {
     display: none;
 }
+
+#fs_account {
+    width: fit-content;
+    margin: auto;
+}
+
+#fs_account_details {
+    margin: -12px;
+    width: calc(100% + 24px);
+}

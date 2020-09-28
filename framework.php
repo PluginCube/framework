@@ -157,9 +157,15 @@ class Framework
             <path fill="none" d="M0 0h24v24H0z"/><path d="M7.291 20.824L2 22l1.176-5.291A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.956 9.956 0 0 1-4.709-1.176zM7 12a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7z"/>
         </svg>';
 
+        $accountSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z"/><path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"/>
+        </svg>';
+
         $this->freemius->override_i18n([
             'upgrade' => $pricingSVG . \__('Upgrade', 'cira'),
+            'pricing' => $pricingSVG . \__('Pricing', 'cira'),
             'contact-us' => $contactSVG . \__('Contact Us', 'cira'),
+            'account' => $accountSVG . \__('Account', 'cira'),
             'symbol_arrow-right' => '',
             'symbol_arrow-left' => ''
         ]);
