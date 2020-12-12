@@ -47,8 +47,8 @@ class Framework
         $this->path = trailingslashit(str_replace('\\', '/', dirname( __FILE__ )));
         $this->url = site_url(str_replace(str_replace('\\', '/', ABSPATH ), '', $this->path));
 
-        require_once $this->path . 'includes/freemius/start.php';
-        require_once $this->path . 'includes/options/options.php';
+        require_once $this->path . 'freemius/start.php';
+        require_once $this->path . 'options/options.php';
 
         $this->args = $args;
 
