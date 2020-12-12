@@ -2,7 +2,7 @@
 ```
   require_once 'framework/framework.php';
 
-  $framework = new CiraPress\Framework([
+  $framework = new PluginCube\Framework([
       'id' => '6915',
       'slug' => 'cira',
       'title' => 'Cira',

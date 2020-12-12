@@ -2,14 +2,14 @@
 /**
  * Creates an interactive wordpress options panel.
  *
- * @package    CiraPress
+ * @package    PluginCube
  * @subpackage Framework
- * @copyright  Copyright (c) 2020, CiraPress
+ * @copyright  Copyright (c) 2020, PluginCube
  * @license    https://opensource.org/licenses/MIT
  * @since      1.0
  */
 
-namespace CiraPress;
+namespace PluginCube;
 
 class Options 
 {

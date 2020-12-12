@@ -1,6 +1,6 @@
 <?php
 
-namespace CiraPress\Options;
+namespace PluginCube\Options;
 
 class AJAX 
 {

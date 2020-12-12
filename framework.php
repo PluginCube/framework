@@ -1,6 +1,6 @@
 <?php
 
-namespace CiraPress;
+namespace PluginCube;
 
 # Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
