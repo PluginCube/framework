@@ -88,10 +88,8 @@ class Framework
      */
     public function styles()
     {
-        $page = isset($_GET['page']) ? explode('-', $_GET['page'])[0] : false;
-
-        if ( $page && $page === $this->args['slug'] ) {
-            wp_enqueue_style('co-plugin', $this->url . "assets/admin.css");
+        if ( isset($_GET['page']) && strpos($_GET['page'], $this->args['slug']) !== false ) {
+            wp_enqueue_style('instant-support', $this->url . "assets/admin.css");
 		}
     }
 
@@ -135,7 +133,7 @@ class Framework
             'has_premium_version' => true,
             'has_addons'          => false,
             'has_paid_plans'      => true,
-            'public_key'          => 'pk_700792c58148d25ae5da76ec8c28a',
+            'public_key'          => $this->args['public_key'],
             'navigation'          => 'tabs',
             'menu'                => array(
                 'slug'          => $this->args['slug'],
@@ -175,10 +173,11 @@ class Framework
         $account = file_get_contents($this->path . "assets/svg/account.svg");
 
         $this->freemius->override_i18n([
-            'upgrade' => $pricing . \__('Upgrade', 'cira'),
-            'pricing' => $pricing . \__('Pricing', 'cira'),
-            'contact-us' => $contact . \__('Contact Us', 'cira'),
-            'account' => $account . \__('Account', 'cira'),
+            'upgrade' => $pricing . \__('Upgrade', 'instant-support'),
+            'pricing' => $pricing . \__('Pricing', 'instant-support'),
+            'contact-us' => $contact . \__('Contact Us', 'instant-support'),
+            'account' => $account . \__('Account', 'instant-support'),
+            'secure-x-page-header' => 'Secure HTTPS page, running from an external domain',
             'symbol_arrow-right' => '',
             'symbol_arrow-left' => ''
         ]);
@@ -194,7 +193,7 @@ class Framework
     public function init_options()
     {
         $this->options = new Options([
-            'id' => $this->args['slug'],
+            'id' => sanitize_key($this->args['slug']),
         ]);
     }
 }
