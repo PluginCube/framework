@@ -5,7 +5,7 @@
  * Initialize the instance
  */
 $options = new PluginCube\Options([
-    'id' => 'cirapress34',
+    'id' => 'plugincube34',
 ]);
 
 /**
