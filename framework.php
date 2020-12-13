@@ -106,14 +106,13 @@ class Framework
             <div class="wrap fs-section fs-full-size-wrapper">
                 <h2 class="nav-tab-wrapper">
                     <a href="#" class="nav-tab fs-tab nav-tab-active home">
-                        <?php echo file_get_contents($this->path . "assets/svg/settings.svg") ?>Settings
+                        Settings
                     </a>
                 </h2>
                 <div id="co"></div>
             </div>
         <?php
     }
-
 
     /**
      * Initialze freemius.
@@ -155,7 +154,7 @@ class Framework
     public function change_pricing_page()
     {
         $this->freemius->add_filter( 'freemius_pricing_js_path', function () {
-            return $this->path . "assets/pricing-page/freemius-pricing.js";
+            return $this->path . "assets/pricing-page/dist/freemius-pricing.js";
         });
     }
 
@@ -168,16 +167,7 @@ class Framework
      */
     public function change_tabs_icon()
     {
-        $pricing = file_get_contents($this->path . "assets/svg/pricing.svg");
-        $contact = file_get_contents($this->path . "assets/svg/contact.svg");
-        $account = file_get_contents($this->path . "assets/svg/account.svg");
-
         $this->freemius->override_i18n([
-            'upgrade' => $pricing . \__('Upgrade', 'instant-support'),
-            'pricing' => $pricing . \__('Pricing', 'instant-support'),
-            'contact-us' => $contact . \__('Contact Us', 'instant-support'),
-            'account' => $account . \__('Account', 'instant-support'),
-            'secure-x-page-header' => 'Secure HTTPS page, running from an external domain',
             'symbol_arrow-right' => '',
             'symbol_arrow-left' => ''
         ]);
