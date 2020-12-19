@@ -89,7 +89,7 @@ class Framework
     public function styles()
     {
         if ( isset($_GET['page']) && strpos($_GET['page'], $this->args['slug']) !== false ) {
-            wp_enqueue_style('instant-support', $this->url . "assets/admin.css");
+            wp_enqueue_style('plugincube-framework', $this->url . "assets/admin.css");
 		}
     }
 
