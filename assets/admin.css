@@ -46,21 +46,21 @@ header.fs-app-header {
 
 .fs-section .nav-tab-wrapper {
     border: none !important;
-    padding: 0 !important;
+    padding: 7px !important;
     text-align: center !important;
     width: fit-content;
     margin: 50px auto !important;
-    background: #e2e4e6;
+    background: #e5e7e8;
     border-radius: 5px;
 }
 
 .fs-section .nav-tab-wrapper a {
     padding: 0px 20px;
-    line-height: 38px;
+    line-height: 32px;
     border: none;
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    color: #555;
+    color: #555555;
     background: transparent;
     outline: none;
     font-weight: 800;
@@ -82,8 +82,7 @@ a.nav-tab.fs-tab:focus {
 }
 
 .fs-section .nav-tab-wrapper .nav-tab-active {
-    color: #23282d;
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     background: rgb(255 255 255);
     border-radius: 5px !important;
 }
