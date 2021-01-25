@@ -109,7 +109,7 @@ class Framework
                         Settings
                     </a>
                 </h2>
-                <div id="co"></div>
+                <div id="pco"></div>
             </div>
         <?php
     }
