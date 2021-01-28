@@ -5,13 +5,13 @@ header.fs-app-header {
     margin: auto;
 }
 
-.fs-page-title{
+/* .fs-page-title{
     display: none;
 }
 
 .fs-plugin-logo {
     display: none !important;
-}
+} */
 
 .fs-secure-notice {
     display: none;
