@@ -46,10 +46,10 @@ header.fs-app-header {
 
 .fs-section .nav-tab-wrapper {
     border: none !important;
-    padding: 7px !important;
+    padding: 7px 7px !important;
     text-align: center !important;
     width: fit-content;
-    margin: 50px auto !important;
+    margin: 40px auto 45px !important;
     background: #dbdee0;
     border-radius: 5px;
 }
@@ -58,7 +58,7 @@ header.fs-app-header {
     padding: 0px 18px;
     line-height: 32px;
     border: none;
-    margin: 0;
+    margin: 0px 0px;
     font-family: 'Nunito', sans-serif;
     color: #555555;
     background: transparent;
@@ -72,18 +72,8 @@ a.nav-tab.fs-tab:focus {
     box-shadow: none !important;
 }
 
-.fs-section .nav-tab-wrapper a:first-child {
-    border-radius: 5px 0px 0px 5px;
-}
-
-.fs-section .nav-tab-wrapper a:last-child {
-    border-radius: 0px 5px 5px 0px;
-}
-
-.fs-section .nav-tab-wrapper .nav-tab-active {
-    background: rgb(255 255 255);
-    border-radius: 5px !important;
-    color: #444;
+.fs-full-size-wrapper {
+    margin: 40px 0 -65px -10px;
 }
 
 .fs-section .nav-tab-wrapper a svg {
@@ -95,8 +85,27 @@ a.nav-tab.fs-tab:focus {
     margin-top: -2px;
 }
 
+.fs-section .nav-tab-wrapper a:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+body[class*=pricing] .nav-tab-wrapper{
+    display: none;
+}
+
+.fs-section .nav-tab-wrapper a:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.fs-section .nav-tab-wrapper .nav-tab-active {
+    background: rgb(255 255 255);
+    border-radius: 15px !important;
+    color: #444;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.03);
+}
+
 a.nav-tab.fs-tab.pricing {
-    padding-right: 13px;
+    padding-right: 11px;
 }
 
 .fs-section .nav-tab-wrapper  .fs-ajax-spinner {
