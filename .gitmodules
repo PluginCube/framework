@@ -5,4 +5,4 @@
 [submodule "pricing-page"]
 	path = assets/pricing-page
 	url = https://github.com/Freemius/pricing-page.git
-    branch = develop
+    branch = feature/single-plan-on-mobile-show-fix
