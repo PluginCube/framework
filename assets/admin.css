@@ -22,6 +22,12 @@ header.fs-app-header {
     float: left;
 }
 
+.fs-notice {
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .cf-plugin-logo svg {
     width: 34px;
     float: left;
