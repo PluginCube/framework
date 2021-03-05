@@ -106,7 +106,7 @@ class Framework
             <div class="wrap fs-section fs-full-size-wrapper">
                 <h2 class="nav-tab-wrapper">
                     <a href="#" class="nav-tab fs-tab nav-tab-active home">
-                        Settings
+                        <?php echo __('Settings') ?>
                     </a>
                 </h2>
                 <div id="pco"></div>
